@@ -102,9 +102,9 @@ const UpdateUser = ({ navigation }) => {
             <KeyboardAvoidingView
               behavior="padding"
               style={{ flex: 1, justifyContent: 'space-between' }}>
-              <Mytext text="Filtro de Usuário" />
+              <Mytext text="Student Filter" />
               <Mytextinput
-                placeholder="Entre com o Código do Usuário"
+                placeholder="Enter student code"
                 style={{ padding: 10 }}
                 onChangeText={
                   (inputUserId) => setInputUserId(inputUserId)
