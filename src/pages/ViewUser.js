@@ -24,7 +24,7 @@ const ViewUser = () => {
           if (len > 0) {
             setUserData(results.rows.item(0));
           } else {
-            alert('Usuário não encontrado !');
+            alert('Student not found !');
           }
         }
       );
