@@ -32,33 +32,33 @@ const HomeScreen = ({ navigation }) => {
           <View style={{ flex: 1 }}>
 
             <MyImageButton
-              title="Registrar Usuário"
+              title="Register Student"
               btnColor='#2992C4'
               btnIcon="user-plus"
               customClick={() => navigation.navigate('Register')}
             />
 
             <MyImageButton
-              title="Atualizar Usuário"
+              title="Update Student Record"
               btnColor='#A45BB9'
               btnIcon="user-circle"
               customClick={() => navigation.navigate('Update')}
             />
 
             <MyImageButton
-              title="Visualizar Usuário"
+              title="View a Student"
               btnColor='#F9AD29'
               btnIcon="user"
               customClick={() => navigation.navigate('View')}
             />
             <MyImageButton
-              title="Visualizar Todos"
+              title="View All Students"
               btnColor='#384F62'
               btnIcon="users"
               customClick={() => navigation.navigate('ViewAll')}
             />
             <MyImageButton
-              title="Excluir Usuário"
+              title="Delete a Student"
               btnColor='#D1503A'
               btnIcon="user-times"
               customClick={() => navigation.navigate('Delete')}
