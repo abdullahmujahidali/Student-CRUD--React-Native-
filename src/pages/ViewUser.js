@@ -35,25 +35,25 @@ const ViewUser = () => {
     <SafeAreaView style={{ flex: 1 }}>
       <View style={{ flex: 1, backgroundColor: 'white' }}>
         <View style={{ flex: 1 }}>
-          <Mytext text="Filtro de Usuário" />
+          <Mytext text="Search a Student" />
           <Mytextinput
-            placeholder="Entre com o Código do Usuário"
+            placeholder="Enetr Student ID"
             onChangeText={
               (inputUserId) => setInputUserId(inputUserId)
             }
             style={{ padding: 10 }}
           />
-          <Mybutton title="Buscar Usuário" customClick={searchUser} />
+          <Mybutton title="Search User" customClick={searchUser} />
           <View
             style={{
               marginLeft: 35,
               marginRight: 35,
               marginTop: 10
             }}>
-            <Text>Código : {userData.user_id}</Text>
-            <Text>Nome : {userData.user_name}</Text>
-            <Text>Telefone : {userData.user_contact}</Text>
-            <Text>Endereço : {userData.user_address}</Text>
+            <Text>Student ID : {userData.user_id}</Text>
+            <Text>Name : {userData.user_name}</Text>
+            <Text>Contact Number : {userData.user_contact}</Text>
+            <Text>Address : {userData.user_address}</Text>
           </View>
         </View>
       </View>
