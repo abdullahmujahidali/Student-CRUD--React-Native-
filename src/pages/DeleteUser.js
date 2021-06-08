@@ -18,7 +18,7 @@ const DeleteUser = ({ navigation }) => {
           console.log('Results', results.rowsAffected);
           if (results.rowsAffected > 0) {
             Alert.alert(
-              'Sucesso',
+              'Success',
               'Student Deleted Successfully!',
               [
                 {
