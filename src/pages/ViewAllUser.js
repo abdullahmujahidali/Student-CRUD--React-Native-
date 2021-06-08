@@ -27,16 +27,16 @@ const ViewAllUser = () => {
       <View
         key={item.user_id}
         style={{ backgroundColor: '#EEE', marginTop: 20, padding: 30, borderRadius: 10 }}>
-        <Text style={styles.textheader}>Código</Text>
+        <Text style={styles.textheader}>Student ID</Text>
         <Text style={styles.textbottom}>{item.user_id}</Text>
 
-        <Text style={styles.textheader}>Nome</Text>
+        <Text style={styles.textheader}>Student Name</Text>
         <Text style={styles.textbottom}>{item.user_name}</Text>
 
-        <Text style={styles.textheader}>Contato</Text>
+        <Text style={styles.textheader}>Student Contact Number</Text>
         <Text style={styles.textbottom}>{item.user_contact}</Text>
 
-        <Text style={styles.textheader}>Endereço</Text>
+        <Text style={styles.textheader}>Student Address</Text>
         <Text style={styles.textbottom}>{item.user_address}</Text>
 
 
