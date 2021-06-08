@@ -43,7 +43,7 @@ const UpdateUser = ({ navigation }) => {
               res.user_address
             );
           } else {
-            alert('Usuário não encontrado!');
+            alert('Student not Found!');
             updateAllStates('', '', '');
           }
         }
@@ -54,19 +54,19 @@ const UpdateUser = ({ navigation }) => {
     console.log(inputUserId, userName, userContact, userAddress);
 
     if (!inputUserId) {
-      alert('Por Favor informe o Código!');
+      alert('Please enter student code!');
       return;
     }
     if (!userName) {
-      alert('Por favor informe o Nome !');
+      alert('Please enter student user name !');
       return;
     }
     if (!userContact) {
-      alert('Por Favor informe o Telefone !');
+      alert('Please enter student contact number !');
       return;
     }
     if (!userAddress) {
-      alert('Por Favor informe o endereço !');
+      alert('Please enter student address !');
       return;
     }
 
@@ -78,8 +78,8 @@ const UpdateUser = ({ navigation }) => {
           console.log('Results', results.rowsAffected);
           if (results.rowsAffected > 0) {
             Alert.alert(
-              'Sucesso',
-              'Usuário atualizado com sucesso !!',
+              'Success',
+              'Student Data Updated !!',
               [
                 {
                   text: 'Ok',
@@ -88,7 +88,7 @@ const UpdateUser = ({ navigation }) => {
               ],
               { cancelable: false }
             );
-          } else alert('Erro ao atualizar o usuário');
+          } else alert('Error updating student record');
         }
       );
     });
@@ -111,11 +111,11 @@ const UpdateUser = ({ navigation }) => {
                 }
               />
               <Mybutton
-                title="Buscar Usuário"
+                title="Search Student"
                 customClick={searchUser}
               />
               <Mytextinput
-                placeholder="Entre com o Nome"
+                placeholder="Enter Student Name"
                 value={userName}
                 style={{ padding: 10 }}
                 onChangeText={
@@ -123,18 +123,18 @@ const UpdateUser = ({ navigation }) => {
                 }
               />
               <Mytextinput
-                placeholder="Entre com o Telefone"
+                placeholder="Enter Student Contact Number"
                 value={'' + userContact}
                 onChangeText={
                   (userContact) => setUserContact(userContact)
                 }
-                maxLength={10}
+                maxLength={11}
                 style={{ padding: 10 }}
                 keyboardType="numeric"
               />
               <Mytextinput
                 value={userAddress}
-                placeholder="Entre com o Endereço"
+                placeholder="Enter student address"
                 onChangeText={
                   (userAddress) => setUserAddress(userAddress)
                 }
@@ -144,7 +144,7 @@ const UpdateUser = ({ navigation }) => {
                 style={{ textAlignVertical: 'top', padding: 10 }}
               />
               <Mybutton
-                title="Atualizar Usuário"
+                title="Update Student Record"
                 customClick={updateUser}
               />
             </KeyboardAvoidingView>
