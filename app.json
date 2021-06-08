@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "CRUDReactNativeSQLite",
-    "slug": "CRUDReactNativeSQLite",
+    "name": "StudentCRUD",
+    "slug": "StudentCRUD",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -20,7 +20,7 @@
       "supportsTablet": true
     },
     "android": {
-      "package": "com.testcompany.crudreactnativesqlite",
+      "package": "com.testcompany.studentcrud",
       "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
@@ -29,6 +29,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "A semester quiz for Android Application Development. This allows user to create read, update and delete a student",
+    "githubUrl": "https://github.com/abdullahmujahidali/Student-CRUD--React-Native-"
   }
 }
